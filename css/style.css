@@ -277,13 +277,14 @@ header {
   }
 
   footer .nav-link {
-    font-size: 12px;
+    font-size: 1rem;
     color: #ffffff;
     margin: 0px;
+    font-weight: 900;
   }
 
   footer .nav-link:hover {
-    font-size: 12px;
+    font-size: 1rem;
     color: #c58e07;
   }
 
