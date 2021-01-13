@@ -247,7 +247,7 @@ header {
   }
 
   #seccion4 .col-md-6 {
-    padding: 0 220px;
+    padding: 0 0px;
   }
 
   /* Footer */
@@ -303,21 +303,30 @@ header {
   .display-3{
     font-size: 28px;
   }
-
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
 
+  .display-3{
+    font-size: 32px;
+  }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
 
+  .display-3{
+    font-size: 42px;
+  }
  }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
 
+  .display-3{
+    font-size: 48px;
+  }
  }
 
 @media (min-width: 1200px) { 
+
 
  }
