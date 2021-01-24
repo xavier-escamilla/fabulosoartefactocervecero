@@ -4,6 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cerveza Artesanal Queretana">
+    <meta name="author" content="Xavier Escamilla">
+    <meta name="keywords" content="cerveza, artesanal, querétaro">
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-196x196.png" sizes="196x196">
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-128x128.png" sizes="128x128">
@@ -77,31 +80,43 @@
 
     <!-- Slider Productos -->
     <div class="center">
-        <a class="nav-link" href="/cerveza.html#gran-rojo">
+        <a class="nav-link">
         <div>
-            <img src="assets/img/gran-rojo.png" alt="productos">
-            <img src="assets/img/gran-rojo-letrero.png" alt="productos">
+            <img id="granrojo" src="assets/img/gran-rojo.png" alt="Gran Rojo">
+            <img id="granrojo" src="assets/img/gran-rojo-letrero.png" alt="Gran Rojo">
+            <!--  Modal -->
+            <div id="myModal" class="modal">
+            
+              <!-- Boton de Cerrar -->
+              <span class="close">&times;</span>
+            
+              <!-- Contenido del Modal (Imagen) -->
+              <img class="modal-content" id="img01">
+            
+              <!-- Descripción (Texto en Imagen) -->
+              <div id="caption"></div>
+            </div>
         </div>
         </a>
-        <a class="nav-link" href="/cerveza.html#el-hallazgo">
+        <a class="nav-link" href="#">
         <div>
             <img src="assets/img/el-hallazgo.png" alt="productos">
             <img src="assets/img/el-hallazgo-letrero.png" alt="productos">
         </div>
         </a>
-        <a class="nav-link" href="/cerveza.html#forest-ipa">
+        <a class="nav-link" href="#">
         <div>
             <img src="assets/img/forest-ipa.png" alt="productos">
             <img src="assets/img/forest-ipa-letrero.png" alt="productos">
         </div>
         </a>
-        <a class="nav-link" href="/cerveza.html#mascara-roble">
+        <a class="nav-link" href="#">
         <div>
             <img src="assets/img/mascara-roble.png" alt="productos">
             <img src="assets/img/mascara-roble-letrero.png" alt="productos">
         </div>
         </a>
-        <a class="nav-link" href="/nene-latoso.html">
+        <a class="nav-link" href="#">
           <div>
               <img src="assets/img/nene-latoso.png" alt="productos">
               <img src="assets/img/nene-latoso-letrero.png" alt="productos">
@@ -113,11 +128,11 @@
     <section id="seccion1">
       <div class="container-fluid">
         <div class="row py-0">
-          <div class="col-12 col-md-4">
+          <div class="col-sm-12 col-md-4">
             <h2 class="mb-5">Conoce las diferentes cervezas que </br>Fabuloso Artefacto Cervecero tiene para ti.</h2>
             <a href="cerveza.html" class="btn">Conoce >></a>
           </div>
-          <div class="col-12 col-md-8" id="seccion1-bg">
+          <div class="col-sm-12 col-md-8" id="seccion1-bg">
           </div>
         </div>
       </div>
@@ -131,7 +146,7 @@
           </div>
           <div class="col-bg-6 col-md-6 col-sm-12 col-xs-12">
             <h1>Orígenes de </br> Fabuloso Artefacto Cervecero</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptatibus nostrum, maiores nam, iusto, perferendis id harum aspernatur rem magnam iure nemo unde? Harum unde enim suscipit sequi voluptas dolore!.</p>
+            <p>Cerveza Artesanal Queretana</p>
           </div>
         </div>
       </div>
@@ -189,7 +204,7 @@
 
     <section id="seccion5">
       <div class="container-fluid text-right px-0">
-        <img src="./assets/img/sapito.png" alt="sapito" style="max-width: 100%;">
+        <img src="./assets/img/sapito.png" alt="sapito" id="imgsapito">
       </div>
     </section>
 
@@ -243,13 +258,13 @@
           </div>
         </div>
         <div class="container-fluid text-center">
-          <a href="https://www.instagram.com/fabuloso_artefacto_cervecero/" class="nav-link" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
-          <a href="https://www.facebook.com/Fabuloso-Artefacto-Cervecero-109514497325122" class="nav-link" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
-          <a href="#" class="nav-link" target="_blank"></a><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+          <ion-icon name="logo-instagram" size="large"></ion-icon>
+          <ion-icon name="logo-facebook" size="large"></ion-icon>
+          <ion-icon name="logo-youtube" size="large"></ion-icon>
         </div>
       </div>
       <div class="container text-center" id="copyright">
-          <p>2020 | Fabuloso Artefacto Cervecero © </p>
+          <p>2021 | Fabuloso Artefacto Cervecero © </p>
       </div>
     </footer>
     <!-- Fin Pie de Pagina -->
@@ -321,6 +336,28 @@
             }
           ]
         });
+    </script>
+    <script type="text/javascript">
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("granrojo");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    } 
     </script>
   </body>
 </html>
