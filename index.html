@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Cerveza Artesanal Queretana">
     <meta name="author" content="Xavier Escamilla">
     <meta name="keywords" content="cerveza, artesanal, querétaro">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-196x196.png" sizes="196x196">
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-128x128.png" sizes="128x128">
@@ -80,51 +82,40 @@
 
     <!-- Slider Productos -->
     <div class="center">
-        <a class="nav-link">
+        <a class="nav-link" href="#">
+          <div>
+            <img src="assets/img/gran-rojo.png" alt="botella-gran-rojo">
+            <img src="assets/img/gran-rojo-letrero.png" alt="logo-gran-rojo">
+          </div>
+        </a>
+        <a class="nav-link" href="#">
         <div>
-            <img id="granrojo" src="assets/img/gran-rojo.png" alt="Gran Rojo">
-            <img id="granrojo" src="assets/img/gran-rojo-letrero.png" alt="Gran Rojo">
-            <!--  Modal -->
-            <div id="myModal" class="modal">
-            
-              <!-- Boton de Cerrar -->
-              <span class="close">&times;</span>
-            
-              <!-- Contenido del Modal (Imagen) -->
-              <img class="modal-content" id="img01">
-            
-              <!-- Descripción (Texto en Imagen) -->
-              <div id="caption"></div>
-            </div>
+            <img src="assets/img/el-hallazgo.png" alt="botella-el-hallazgo">
+            <img src="assets/img/el-hallazgo-letrero.png" alt="logo-el-hallazgo">
         </div>
         </a>
         <a class="nav-link" href="#">
         <div>
-            <img src="assets/img/el-hallazgo.png" alt="productos">
-            <img src="assets/img/el-hallazgo-letrero.png" alt="productos">
+            <img src="assets/img/forest-ipa.png" alt="botella-forest-ipa">
+            <img src="assets/img/forest-ipa-letrero.png" alt="logo-forest-ipa">
         </div>
         </a>
         <a class="nav-link" href="#">
         <div>
-            <img src="assets/img/forest-ipa.png" alt="productos">
-            <img src="assets/img/forest-ipa-letrero.png" alt="productos">
-        </div>
-        </a>
-        <a class="nav-link" href="#">
-        <div>
-            <img src="assets/img/mascara-roble.png" alt="productos">
-            <img src="assets/img/mascara-roble-letrero.png" alt="productos">
+            <img src="assets/img/mascara-roble.png" alt="botella-mascara-roble">
+            <img src="assets/img/mascara-roble-letrero.png" alt="logo-mascara-roble">
         </div>
         </a>
         <a class="nav-link" href="#">
           <div>
-              <img src="assets/img/nene-latoso.png" alt="productos">
-              <img src="assets/img/nene-latoso-letrero.png" alt="productos">
+              <img src="assets/img/nene-latoso.png" alt="botella-nene-latoso">
+              <img src="assets/img/nene-latoso-letrero.png" alt="logo-nene-latoso">
           </div>
           </a>
     </div>
     <!-- Fin Slider Productos -->
 
+    <!-- Sección 1 -->
     <section id="seccion1">
       <div class="container-fluid">
         <div class="row py-0">
@@ -137,7 +128,9 @@
         </div>
       </div>
     </section>
+    <!-- Fin Sección 1 -->
 
+    <!-- Sección 2 -->
     <section id="seccion2">
       <div class="container">
         <div class="row">
@@ -151,6 +144,7 @@
         </div>
       </div>
     </section>
+    <!-- Fin Sección 2 -->
 
     <!-- Parallax -->
     <section id="seccion3">
@@ -173,7 +167,6 @@
       </svg>
     </section>
     <!-- Fin Parallax -->
-
 
     <!-- Logos Puntos de Venta -->
     <section id="seccion4">
@@ -202,11 +195,13 @@
     </section>
     <!-- Fin Logos de Venta -->
 
+    <!-- Imagen Sapito -->
     <section id="seccion5">
       <div class="container-fluid text-right px-0">
         <img src="./assets/img/sapito.png" alt="sapito" id="imgsapito">
       </div>
     </section>
+    <!-- Fin Imagen Sapito -->
 
     <!-- Pie de Pagina -->
     <footer>
@@ -336,28 +331,6 @@
             }
           ]
         });
-    </script>
-    <script type="text/javascript">
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("granrojo");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    } 
     </script>
   </body>
 </html>
