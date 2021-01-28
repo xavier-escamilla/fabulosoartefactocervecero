@@ -215,6 +215,21 @@ header {
     padding: 0 220px;
   }
 
+  #seccion2 h1{
+    color: #ce8b0a;
+  }
+
+  #origenes p{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #pregunta{
+    font-size: 24px;
+    font-weight: 800;
+    color: #b8c543;
+  }
+
   /* Seccion 3 */
 
   #seccion3 {
